@@ -150,3 +150,12 @@ section[epub|type~="epigraph"] > blockquote:first-child > p:first-child{
 #dedication-1 br{
 	display: none;
 }
+
+#prologue-1 > h2{
+	font-family: "Standard Blackletter", serif;
+	font-variant: normal;
+}
+
+#prologue-1 > p{
+	font-variant: small-caps;
+}

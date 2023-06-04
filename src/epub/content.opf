@@ -89,7 +89,9 @@
 		<!-- Volume 6 - Supplement -->
 		<dc:source>https://www.gutenberg.org/ebooks/64384</dc:source>
 		<dc:source>https://archive.org/details/supplementalnigh06burt</dc:source>
-		<meta property="se:production-notes">PRODUCTION_NOTES</meta>
+		<meta property="se:production-notes">
+			• chapter-1-1 has gained a title that’s not in the original text but is in the page headers.
+		</meta>
 		<meta property="se:word-count">WORD_COUNT</meta>
 		<meta property="se:reading-ease.flesch">READING_EASE</meta>
 		<meta property="se:url.encyclopedia.wikipedia">https://en.wikipedia.org/wiki/The_Book_of_the_Thousand_Nights_and_a_Night</meta>
