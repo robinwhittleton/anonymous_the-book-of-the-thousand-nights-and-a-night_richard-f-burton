@@ -126,13 +126,15 @@ section[epub|type~="epigraph"] > blockquote:first-child > p:first-child{
 	font-style: normal;
 }
 
-#dedication-1 > p{
+#dedication-1 > p,
+#dedication-3 > p{
 	border: .5em solid;
 	padding: 5em 3em 4em;
 	font-variant: all-small-caps;
 }
 
-#dedication-1 b{
+#dedication-1 b,
+#dedication-3 b{
 	font-family: "Standard Blackletter", serif;
 	font-variant: normal;
 	font-weight: 700;
@@ -142,12 +144,23 @@ section[epub|type~="epigraph"] > blockquote:first-child > p:first-child{
 }
 
 #dedication-1 b:first-child,
-#dedication-1 span{
+#dedication-3 b:first-child,
+#dedication-1 span,
+#dedication-3 span{
 	display: block;
 	margin-bottom: 1em;
 }
 
-#dedication-1 br{
+#dedication-3 span:nth-of-type(2){
+	font-size: 1.25em;
+}
+
+#dedication-3 b:last-child{
+	font-size: 1em;
+}
+
+#dedication-1 br,
+#dedication-3 br{
 	display: none;
 }
 
