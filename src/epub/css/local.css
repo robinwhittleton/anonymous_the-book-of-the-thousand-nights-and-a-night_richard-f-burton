@@ -117,29 +117,28 @@ p span.i1{
 	text-indent: -1em;
 }
 
-
 /* Custom CSS for specific sections */
 section[epub|type~="epigraph"] > blockquote:first-child > p:first-child{
-	text-align: center;
-	margin-bottom: 1em;
 	font-size: 2em;
 	font-style: normal;
+	margin-bottom: 1em;
+	text-align: center;
 }
 
 #dedication-1 > p,
 #dedication-3 > p{
 	border: .5em solid;
-	padding: 5em 3em 4em;
 	font-variant: all-small-caps;
+	padding: 5em 3em 4em;
 }
 
 #dedication-1 b,
 #dedication-3 b{
+	display: block;
 	font-family: "Standard Blackletter", serif;
+	font-size: 1.5em;
 	font-variant: normal;
 	font-weight: 700;
-	font-size: 1.5em;
-	display: block;
 	margin-bottom: .25em;
 }
 
