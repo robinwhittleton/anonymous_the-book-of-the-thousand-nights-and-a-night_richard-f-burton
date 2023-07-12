@@ -7,6 +7,10 @@
 	src: url("../fonts/standard-blackletter.otf") format("opentype");
 }
 
+abbr[epub|type~="se:era"]{
+	font-variant: all-small-caps;
+}
+
 /* All epigraphs */
 [epub|type~="epigraph"]{
 	font-style: italic;
