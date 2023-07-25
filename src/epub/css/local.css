@@ -204,3 +204,20 @@ section[epub|type~="epigraph"] > blockquote:first-child > p:first-child{
 #foreword-11 > blockquote span:nth-of-type(2){
 	font-size: 0.8em;
 }
+
+#foreword-13 > blockquote:first-of-type{
+	text-align: center;
+}
+
+#foreword-13 > blockquote:nth-of-type(3) span{
+	display: inline-block;
+	text-align: center;
+}
+
+#foreword-13 > blockquote:nth-of-type(3) span:nth-of-type(odd){
+	width: 2.9em;
+}
+
+#foreword-13 > blockquote:nth-of-type(3) span:nth-of-type(even){
+	width: 1em;
+}
