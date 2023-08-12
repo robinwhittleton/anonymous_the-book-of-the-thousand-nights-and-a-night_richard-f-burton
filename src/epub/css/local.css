@@ -254,3 +254,32 @@ section[epub|type~="epigraph"] > blockquote:first-child > p:first-child{
 #foreword-14 > blockquote:first-of-type b{
 	text-transform: uppercase;
 }
+
+#foreword-15 > blockquote:nth-of-type(2){
+	line-height: 1.5;
+	font-variant: all-small-caps;
+	text-align: center;
+}
+
+#foreword-15 > blockquote:nth-of-type(2) span:first-of-type,
+#foreword-15 > blockquote:nth-of-type(2) span:nth-of-type(6),
+#foreword-15 > blockquote:nth-of-type(2) span:nth-of-type(10){
+	font-size: 1.5em;
+}
+
+#foreword-15 > blockquote:nth-of-type(2) span:nth-of-type(3),
+#foreword-15 > blockquote:nth-of-type(2) span:nth-of-type(7){
+	font-variant: normal;
+}
+
+#foreword-15 > blockquote:nth-of-type(2) span:nth-of-type(4),
+#foreword-15 > blockquote:nth-of-type(2) span:nth-of-type(8){
+	font-variant: normal;
+	font-family: "Standard Blackletter", serif;
+}
+
+#foreword-15 > blockquote:nth-of-type(2) span:nth-of-type(5),
+#foreword-15 > blockquote:nth-of-type(2) span:nth-of-type(9),
+#foreword-15 > blockquote:nth-of-type(2) span:nth-of-type(11){
+	font-size: 0.8em;
+}
