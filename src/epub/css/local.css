@@ -140,6 +140,23 @@ p span.i2{
 	text-indent: -1em;
 }
 
+.couplets > p {
+	display: table;
+}
+
+.couplets > p > span{
+	display: table-row;
+}
+
+.couplets > p > span > span{
+	display: table-cell;
+	text-indent: 0;
+}
+
+.couplets > p > span > span + span{
+	padding-left: 1ch;
+}
+
 /* Custom CSS for specific sections */
 section[epub|type~="epigraph"] > blockquote:first-child > p:first-child{
 	font-size: 2em;
