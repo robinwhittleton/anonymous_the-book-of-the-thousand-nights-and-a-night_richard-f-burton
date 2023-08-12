@@ -16,6 +16,12 @@ blockquote[xml|lang]{
 	font-style: italic;
 }
 
+header{
+	font-variant: small-caps;
+	margin: 1em;
+	text-align: center;
+}
+
 footer{
 	margin-top: 1em;
 	text-align: right;
@@ -299,4 +305,32 @@ section[epub|type~="epigraph"] > blockquote:first-child > p:first-child{
 #foreword-15 > blockquote:nth-of-type(2) span:nth-of-type(9),
 #foreword-15 > blockquote:nth-of-type(2) span:nth-of-type(11){
 	font-size: 0.8em;
+}
+
+#foreword-16 > blockquote:nth-of-type(3) > p{
+	display: table;
+	text-align: center;
+	width: 100%;
+}
+
+#foreword-16 > blockquote:nth-of-type(3) > p > span{
+	display: table-cell;
+	width: 33.3%;
+}
+
+#foreword-16 table{
+	margin: 1em 2.5em;
+}
+
+#foreword-16 table > tr + tr > td:last-child{
+	padding-left: 1.5em;
+}
+
+#foreword-16 > blockquote:last-of-type{
+	line-height: 1.5;
+	text-align: center;
+}
+
+#foreword-16 > blockquote:last-of-type span:nth-of-type(2){
+	font-variant: small-caps;
 }
