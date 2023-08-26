@@ -27,6 +27,11 @@ footer{
 	text-align: right;
 }
 
+[epub|type~="z3998:salutation"] + p,
+[epub|type~="z3998:letter"] header + p{
+	text-indent: 0;
+}
+
 /* All epigraphs */
 [epub|type~="epigraph"]{
 	font-style: italic;
@@ -146,7 +151,7 @@ p span.i2{
 	text-indent: -1em;
 }
 
-.couplets > p {
+.couplets > p{
 	display: table;
 }
 
@@ -171,15 +176,13 @@ section[epub|type~="epigraph"] > blockquote:first-child > p:first-child{
 	text-align: center;
 }
 
-#dedication-1 > p,
-#dedication-3 > p{
+.dedication-epitaph > *{
 	border: .5em solid;
 	font-variant: all-small-caps;
 	padding: 5em 3em 4em;
 }
 
-#dedication-1 b,
-#dedication-3 b{
+.dedication-epitaph b{
 	display: block;
 	font-family: "Standard Blackletter", serif;
 	font-size: 1.5em;
@@ -188,12 +191,61 @@ section[epub|type~="epigraph"] > blockquote:first-child > p:first-child{
 	margin-bottom: .25em;
 }
 
-#dedication-1 b:first-child,
-#dedication-3 b:first-child,
-#dedication-1 span,
-#dedication-3 span{
+.dedication-epitaph b:first-child,
+.dedication-epitaph span{
 	display: block;
 	margin-bottom: 1em;
+}
+
+.dedication-epitaph br{
+	display: none;
+}
+
+section[epub|type*="dedication z3998:letter"]{
+	text-align: initial;
+}
+
+[epub|type*="dedication z3998:letter"] > header{
+	margin-bottom: 1em;
+}
+
+[epub|type*="dedication z3998:letter"] span[epub|type~="z3998:recipient"]{
+	text-transform: uppercase;
+}
+
+[epub|type*="dedication z3998:letter"] > header em{
+	font-variant: normal;
+}
+
+[epub|type*="dedication z3998:letter"] [epub|type~="z3998:salutation"]{
+	font-variant: small-caps;
+}
+
+[epub|type*="dedication z3998:letter"] > footer{
+	margin-top: 1em;
+}
+
+[epub|type*="dedication z3998:letter"] [epub|type~="z3998:valediction"]{
+	margin-right: 2em;
+}
+
+[epub|type*="dedication z3998:letter"] [epub|type~="se:letter.dateline"]{
+	float: left;
+	margin: 1em 0 0 1em;
+	text-align: center;
+	text-indent: 0;
+}
+
+[epub|type*="dedication z3998:letter"] time{
+	font-style: italic;
+}
+
+@supports(display: flex){
+	[epub|type*="dedication z3998:letter"] > p,
+	[epub|type*="dedication z3998:letter"] > footer{
+		align-self: stretch;
+		margin-left: 10%;
+	}
 }
 
 #dedication-3 span:nth-of-type(2){
@@ -204,9 +256,84 @@ section[epub|type~="epigraph"] > blockquote:first-child > p:first-child{
 	font-size: 1em;
 }
 
-#dedication-1 br,
-#dedication-3 br{
+#dedication-6 span,
+#dedication-7 span,
+#dedication-13 span,
+#dedication-16 span{
+	display: block;
+	font-variant: small-caps;
+}
+
+#dedication-6 br,
+#dedication-7 br,
+#dedication-13 br,
+#dedication-16 br{
 	display: none;
+}
+
+#dedication-6 span:first-of-type,
+#dedication-7 span:first-of-type,
+#dedication-13 span:first-of-type{
+	font-size: 1.25em;
+	margin-bottom: 1em;
+	text-transform: uppercase;
+}
+
+#dedication-13 span:nth-of-type(2){
+	margin-bottom: 1em;
+}
+
+#dedication-6 span:nth-of-type(4),
+#dedication-7 span:nth-of-type(4){
+	font-size: 1.25em;
+	margin-top: 1em;
+	text-transform: uppercase;
+}
+
+#dedication-6 span:nth-of-type(5),
+#dedication-7 span:nth-of-type(2),
+#dedication-7 span:nth-of-type(5){
+	font-size: 0.8em;
+	margin-bottom: 1em;
+}
+
+#dedication-16 span{
+	margin: 1em 0;
+}
+
+#dedication-16 span:nth-of-type(3){
+	font-size: 1.125em;
+	text-transform: uppercase;
+}
+
+#dedication-16 span:last-child{
+	font-family: "Standard Blackletter", serif;
+	font-variant: normal;
+	font-size: 1.25em;
+}
+
+#dedication-6 > footer,
+#dedication-7 > footer,
+#dedication-13 > footer{
+	margin-top: 1em;
+	text-align: right;
+}
+
+@supports(display: flex){
+	#dedication-6 > footer,
+	#dedication-7 > footer,
+	#dedication-13 > footer{
+		align-self: stretch;
+		margin-left: 10%;
+	}
+}
+
+#dedication-8 > *{
+	font-variant: normal;
+}
+
+#dedication-8 b:first-of-type{
+	margin: .5em 0;
 }
 
 #prologue-1 > h2{
@@ -219,9 +346,9 @@ section[epub|type~="epigraph"] > blockquote:first-child > p:first-child{
 }
 
 #foreword-11 > blockquote{
-	text-align: center;
 	font-size: 1.25em;
 	line-height: 1.5;
+	text-align: center;
 }
 
 #foreword-11 > blockquote span:nth-of-type(2){
@@ -246,8 +373,8 @@ section[epub|type~="epigraph"] > blockquote:first-child > p:first-child{
 }
 
 #foreword-14 > blockquote:first-of-type > p{
-	line-height: 1.5;
 	font-variant: all-small-caps;
+	line-height: 1.5;
 	text-align: center;
 	text-indent: 0;
 }
@@ -262,8 +389,8 @@ section[epub|type~="epigraph"] > blockquote:first-child > p:first-child{
 }
 
 #foreword-14 > blockquote:first-of-type > p:first-child > span:nth-of-type(5){
-	margin-bottom: 0;
 	font-variant: small-caps;
+	margin-bottom: 0;
 }
 
 #foreword-14 > blockquote:first-of-type > p:last-child > span:first-of-type{
@@ -279,8 +406,8 @@ section[epub|type~="epigraph"] > blockquote:first-child > p:first-child{
 }
 
 #foreword-15 > blockquote:nth-of-type(2){
-	line-height: 1.5;
 	font-variant: all-small-caps;
+	line-height: 1.5;
 	text-align: center;
 }
 
@@ -297,8 +424,8 @@ section[epub|type~="epigraph"] > blockquote:first-child > p:first-child{
 
 #foreword-15 > blockquote:nth-of-type(2) span:nth-of-type(4),
 #foreword-15 > blockquote:nth-of-type(2) span:nth-of-type(8){
-	font-variant: normal;
 	font-family: "Standard Blackletter", serif;
+	font-variant: normal;
 }
 
 #foreword-15 > blockquote:nth-of-type(2) span:nth-of-type(5),
