@@ -170,6 +170,16 @@ p span.i2{
 }
 
 /* Custom CSS for specific sections */
+.night-announcement{
+	display: block;
+	margin: 0.75em 0;
+	text-indent: 0;
+	text-align: center;
+	font-family: "Standard Blackletter", serif;
+	font-size: 1.25em;
+}
+
+
 section[epub|type~="epigraph"] > blockquote:first-child > p:first-child{
 	font-size: 2em;
 	font-style: normal;
