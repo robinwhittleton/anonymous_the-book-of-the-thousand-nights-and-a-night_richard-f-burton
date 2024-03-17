@@ -156,6 +156,11 @@ p span.i2{
 	text-indent: -1em;
 }
 
+p span.i3{
+	padding-left: 4em;
+	text-indent: -1em;
+}
+
 .couplets > p{
 	display: table;
 }
