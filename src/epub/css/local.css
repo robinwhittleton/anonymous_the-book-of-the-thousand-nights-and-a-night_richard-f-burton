@@ -491,3 +491,21 @@ section[epub|type*="dedication z3998:letter"]{
 #foreword-16 > blockquote:last-of-type span:nth-of-type(2){
 	font-variant: small-caps;
 }
+
+#chapter-10-2 b{
+	font-family: "Standard Blackletter", serif;
+	text-transform: none;
+}
+
+#chapter-10-2 > p:last-child{
+	text-indent: 0;
+	text-align: center;
+	font-variant: all-small-caps;
+	margin-top: 0.5em;
+}
+
+#chapter-10-2 > p:last-child > span{
+	display: block;
+	font-size: 1.5em;
+	margin-top: 0.5em;
+}
