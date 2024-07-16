@@ -70,25 +70,6 @@
 		<!-- Volume 10 -->
 		<dc:source>https://www.gutenberg.org/ebooks/58360</dc:source>
 		<dc:source>https://archive.org/details/plainliteraltran10burtuoft</dc:source>
-		<!-- Volume 1 - Supplement -->
-		<dc:source>https://www.gutenberg.org/ebooks/59156</dc:source>
-		<dc:source>https://archive.org/details/supplementalnigh01burt</dc:source>
-		<!-- Volume 2 - Supplement -->
-		<dc:source>https://www.gutenberg.org/ebooks/59953</dc:source>
-		<dc:source>https://archive.org/details/supplementalnigh02burt</dc:source>
-		<!-- Volume 3 - Supplement -->
-		<dc:source>https://www.gutenberg.org/ebooks/60889</dc:source>
-		<dc:source>https://www.gutenberg.org/ebooks/61974</dc:source>
-		<dc:source>https://archive.org/details/supplementalnigh03burt</dc:source>
-		<!-- Volume 4 - Supplement -->
-		<dc:source>https://www.gutenberg.org/ebooks/62140</dc:source>
-		<dc:source>https://archive.org/details/supplementalnigh04burt</dc:source>
-		<!-- Volume 5 - Supplement -->
-		<dc:source>https://www.gutenberg.org/ebooks/63266</dc:source>
-		<dc:source>https://archive.org/details/supplementalnigh05burt</dc:source>
-		<!-- Volume 6 - Supplement -->
-		<dc:source>https://www.gutenberg.org/ebooks/64384</dc:source>
-		<dc:source>https://archive.org/details/supplementalnigh06burt</dc:source>
 		<meta property="se:production-notes">
 			• chapter-1-1 has gained a title that’s not in the original text but is in the page headers.
 		</meta>

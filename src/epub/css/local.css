@@ -287,30 +287,21 @@ section[epub|type*="dedication z3998:letter"]{
 }
 
 #dedication-6 span,
-#dedication-7 span,
-#dedication-13 span,
-#dedication-16 span{
+#dedication-7 span{
 	display: block;
 	font-variant: small-caps;
 }
 
 #dedication-6 br,
-#dedication-7 br,
-#dedication-13 br,
-#dedication-16 br{
+#dedication-7 br{
 	display: none;
 }
 
 #dedication-6 span:first-of-type,
-#dedication-7 span:first-of-type,
-#dedication-13 span:first-of-type{
+#dedication-7 span:first-of-type{
 	font-size: 1.25em;
 	margin-bottom: 1em;
 	text-transform: uppercase;
-}
-
-#dedication-13 span:nth-of-type(2){
-	margin-bottom: 1em;
 }
 
 #dedication-6 span:nth-of-type(4),
@@ -327,32 +318,15 @@ section[epub|type*="dedication z3998:letter"]{
 	margin-bottom: 1em;
 }
 
-#dedication-16 span{
-	margin: 1em 0;
-}
-
-#dedication-16 span:nth-of-type(3){
-	font-size: 1.125em;
-	text-transform: uppercase;
-}
-
-#dedication-16 span:last-child{
-	font-family: "Standard Blackletter", serif;
-	font-variant: normal;
-	font-size: 1.25em;
-}
-
 #dedication-6 > footer,
-#dedication-7 > footer,
-#dedication-13 > footer{
+#dedication-7 > footer{
 	margin-top: 1em;
 	text-align: right;
 }
 
 @supports(display: flex){
 	#dedication-6 > footer,
-	#dedication-7 > footer,
-	#dedication-13 > footer{
+	#dedication-7 > footer{
 		align-self: stretch;
 		margin-left: 10%;
 	}
@@ -372,123 +346,6 @@ section[epub|type*="dedication z3998:letter"]{
 }
 
 #prologue-1 > p{
-	font-variant: small-caps;
-}
-
-#foreword-11 > blockquote{
-	font-size: 1.25em;
-	line-height: 1.5;
-	text-align: center;
-}
-
-#foreword-11 > blockquote span:nth-of-type(2){
-	font-size: 0.8em;
-}
-
-#foreword-13 > blockquote:first-of-type{
-	text-align: center;
-}
-
-#foreword-13 > blockquote:nth-of-type(3) span{
-	display: inline-block;
-	text-align: center;
-}
-
-#foreword-13 > blockquote:nth-of-type(3) span:nth-of-type(odd){
-	width: 2.9em;
-}
-
-#foreword-13 > blockquote:nth-of-type(3) span:nth-of-type(even){
-	width: 1em;
-}
-
-#foreword-14 > blockquote:first-of-type > p{
-	font-variant: all-small-caps;
-	line-height: 1.5;
-	text-align: center;
-	text-indent: 0;
-}
-
-#foreword-14 > blockquote:first-of-type > p:first-child > span:first-of-type,
-#foreword-14 > blockquote:first-of-type > p:first-child > span:nth-of-type(4){
-	font-size: 1.5em;
-}
-
-#foreword-14 > blockquote:first-of-type > p:first-child > span:nth-of-type(3){
-	font-size: 0.8em;
-}
-
-#foreword-14 > blockquote:first-of-type > p:first-child > span:nth-of-type(5){
-	font-variant: small-caps;
-	margin-bottom: 0;
-}
-
-#foreword-14 > blockquote:first-of-type > p:last-child > span:first-of-type{
-	font-variant: normal;
-}
-
-#foreword-14 > blockquote:first-of-type > p:last-child > span:last-of-type{
-	font-variant: small-caps;
-}
-
-#foreword-14 > blockquote:first-of-type b{
-	text-transform: uppercase;
-}
-
-#foreword-15 > blockquote:nth-of-type(2){
-	font-variant: all-small-caps;
-	line-height: 1.5;
-	text-align: center;
-}
-
-#foreword-15 > blockquote:nth-of-type(2) span:first-of-type,
-#foreword-15 > blockquote:nth-of-type(2) span:nth-of-type(6),
-#foreword-15 > blockquote:nth-of-type(2) span:nth-of-type(10){
-	font-size: 1.5em;
-}
-
-#foreword-15 > blockquote:nth-of-type(2) span:nth-of-type(3),
-#foreword-15 > blockquote:nth-of-type(2) span:nth-of-type(7){
-	font-variant: normal;
-}
-
-#foreword-15 > blockquote:nth-of-type(2) span:nth-of-type(4),
-#foreword-15 > blockquote:nth-of-type(2) span:nth-of-type(8){
-	font-family: "Standard Blackletter", serif;
-	font-variant: normal;
-}
-
-#foreword-15 > blockquote:nth-of-type(2) span:nth-of-type(5),
-#foreword-15 > blockquote:nth-of-type(2) span:nth-of-type(9),
-#foreword-15 > blockquote:nth-of-type(2) span:nth-of-type(11){
-	font-size: 0.8em;
-}
-
-#foreword-16 > blockquote:nth-of-type(3) > p{
-	display: table;
-	text-align: center;
-	width: 100%;
-}
-
-#foreword-16 > blockquote:nth-of-type(3) > p > span{
-	display: table-cell;
-	width: 33.3%;
-}
-
-#foreword-16 table{
-	margin: 1em 2.5em;
-}
-
-#foreword-16 table > tr + tr > td:last-child{
-	padding-left: 1.5em;
-}
-
-#foreword-16 > blockquote:last-of-type{
-	line-height: 1.5;
-	text-align: center;
-}
-
-#foreword-16 > blockquote:last-of-type span:nth-of-type(2){
 	font-variant: small-caps;
 }
 
