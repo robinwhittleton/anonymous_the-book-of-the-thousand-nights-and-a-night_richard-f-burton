@@ -12,7 +12,7 @@ abbr[epub|type~="se:era"]{
 	font-variant: all-small-caps;
 }
 
-blockquote[xml|lang],
+body [xml|lang],
 dfn{
 	font-style: italic;
 }
