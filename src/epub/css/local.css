@@ -211,6 +211,26 @@ p span.i5{
 	text-indent: -1em;
 }
 
+p span.i6{
+	padding-left: 7em;
+	text-indent: -1em;
+}
+
+p span.i7{
+	padding-left: 8em;
+	text-indent: -1em;
+}
+
+p span.i12{
+	padding-left: 13em;
+	text-indent: -1em;
+}
+
+span.elision{
+	margin: .5em;
+	margin-left: 3em;
+}
+
 .couplets > p{
 	display: table;
 }
@@ -231,13 +251,12 @@ p span.i5{
 /* Custom CSS for specific sections */
 .night-announcement{
 	display: block;
-	margin: 0.75em 0;
-	text-indent: 0;
-	text-align: center;
 	font-family: "Standard Blackletter", serif;
 	font-size: 1.25em;
+	margin: 0.75em 0;
+	text-align: center;
+	text-indent: 0;
 }
-
 
 section[epub|type~="epigraph"] > blockquote:first-child > p:first-child{
 	font-size: 2em;
@@ -395,10 +414,10 @@ section[epub|type*="dedication z3998:letter"]{
 }
 
 #chapter-10-2 > p:last-child{
-	text-indent: 0;
-	text-align: center;
 	font-variant: all-small-caps;
 	margin-top: 0.5em;
+	text-align: center;
+	text-indent: 0;
 }
 
 #chapter-10-2 > p:last-child > span{
