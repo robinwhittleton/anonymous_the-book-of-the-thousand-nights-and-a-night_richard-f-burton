@@ -74,6 +74,7 @@
 		<dc:source>https://archive.org/details/plainliteraltran10burtuoft</dc:source>
 		<meta property="se:production-notes">
 			• chapter-1-1 has gained a title that’s not in the original text but is in the page headers.
+			• Arabic hamza characters have been changed to render with a modifier letter apostrophe.
 		</meta>
 		<meta property="se:word-count">WORD_COUNT</meta>
 		<meta property="se:reading-ease.flesch">READING_EASE</meta>
