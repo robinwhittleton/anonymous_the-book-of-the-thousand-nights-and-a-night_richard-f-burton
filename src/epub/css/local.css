@@ -425,3 +425,8 @@ section[epub|type*="dedication z3998:letter"]{
 	font-size: 1.5em;
 	margin-top: 0.5em;
 }
+
+#illustration-3,
+#illustration-4{
+	width: 1ex;
+}
