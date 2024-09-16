@@ -17,6 +17,35 @@ dfn{
 	font-style: italic;
 }
 
+ruby{
+	ruby-align: center;
+}
+
+blockquote ruby{
+	ruby-position: under;
+}
+
+rt{
+	font-size: 1em;
+	font-style: normal;
+	margin-bottom: -1ex;
+}
+
+dl{
+	display: table;
+	margin: 1em 40px;
+}
+
+dl > div{
+	display: table-row;
+}
+
+dt,
+dd{
+	display: table-cell;
+	padding-right: 0.5em;
+}
+
 header{
 	font-variant: small-caps;
 	margin: 1em;
@@ -425,6 +454,82 @@ section[epub|type*="dedication z3998:letter"]{
 	font-size: 1.5em;
 	margin-top: 0.5em;
 }
+
+#chapter-10-3 em[epub|type~="z3998:phoneme"]{
+	text-transform: uppercase;
+}
+
+/* Extended `{` after “Thus the formula becomes” */
+@supports(display: flex){
+	#chapter-10-3-5-2 > blockquote:nth-child(43) > p > span:last-child{
+		align-items: center;
+		display: flex;
+	}
+
+	#chapter-10-3-5-2 > blockquote:nth-child(43) > p > span:last-child > span:nth-child(2){
+		font-size: 2em;
+		font-style: normal;
+		margin: 0 0.25em;
+		text-indent: 0;
+	}
+
+	#chapter-10-3-5-2 > blockquote:nth-child(43) > p > span:last-child > span:last-child > span{
+		display: block;
+		text-indent: 0;
+	}
+}
+
+/* Doubled lines after “represented by the scheme” */
+#chapter-10-3-5-2 > blockquote:nth-child(45) > p > span > span,
+#chapter-10-3-5-2 > blockquote:nth-child(52) > p > span > span,
+#chapter-10-3-5-2 > blockquote:nth-child(95) > p > span > span,
+#chapter-10-3-5-2 > blockquote:nth-child(97) > p > span > span{
+	display: inline-block;
+	text-indent: 0;
+	vertical-align: middle;
+}
+
+#chapter-10-3-5-2 > blockquote:nth-child(45) > p > span > span > span,
+#chapter-10-3-5-2 > blockquote:nth-child(52) > p > span > span > span,
+#chapter-10-3-5-2 > blockquote:nth-child(95) > p > span > span > span,
+#chapter-10-3-5-2 > blockquote:nth-child(97) > p > span > span > span{
+	display: block;
+}
+
+#chapter-10-3-5-2 > blockquote:nth-child(45) > p > span > span:nth-child(even),
+#chapter-10-3-5-2 > blockquote:nth-child(52) > p > span > span:nth-child(even),
+#chapter-10-3-5-2 > blockquote:nth-child(95) > p > span > span:nth-child(even),
+#chapter-10-3-5-2 > blockquote:nth-child(97) > p > span > span:nth-child(even){
+	display: inline;
+	font-size: 2em;
+	margin: 0 0.25em;
+	text-indent: 0;
+}
+
+#chapter-10-3-5-2 > blockquote:nth-child(52) > p > span:last-child > span:nth-child(4){
+	font-size: 3em;
+}
+
+/* Extended `{` after “Hence the formula is” */
+@supports(display: flex){
+	#chapter-10-3-5-2 > blockquote:nth-child(50) > p > span:last-child{
+		align-items: center;
+		display: flex;
+	}
+
+	#chapter-10-3-5-2 > blockquote:nth-child(50) > p > span:last-child > span:nth-child(2){
+		font-size: 3em;
+		font-style: normal;
+		margin: 0 0.25em;
+		text-indent: 0;
+	}
+
+	#chapter-10-3-5-2 > blockquote:nth-child(50) > p > span:last-child > span:last-child > span{
+		display: block;
+		text-indent: 0;
+	}
+}
+
 
 #illustration-3,
 #illustration-4{
