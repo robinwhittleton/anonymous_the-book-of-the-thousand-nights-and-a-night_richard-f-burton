@@ -17,6 +17,31 @@ dfn{
 	font-style: italic;
 }
 
+ruby{
+	ruby-align: center;
+	ruby-position: under;
+}
+
+rt{
+	font-size: 1em;
+	font-style: normal;
+}
+
+dl{
+	display: table;
+	margin: 1em 40px;
+}
+
+dl > div{
+	display: table-row;
+}
+
+dt,
+dd{
+	display: table-cell;
+	padding-right: 0.5em;
+}
+
 header{
 	font-variant: small-caps;
 	margin: 1em;
@@ -424,6 +449,10 @@ section[epub|type*="dedication z3998:letter"]{
 	display: block;
 	font-size: 1.5em;
 	margin-top: 0.5em;
+}
+
+#chapter-10-3 em[epub|type~="z3998:phoneme"]{
+	text-transform: uppercase;
 }
 
 #illustration-3,
