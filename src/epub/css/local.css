@@ -17,6 +17,35 @@ dfn{
 	font-style: italic;
 }
 
+ruby{
+	ruby-align: center;
+}
+
+blockquote ruby{
+	ruby-position: under;
+}
+
+rt{
+	font-size: 1em;
+	font-style: normal;
+	margin-bottom: -1ex;
+}
+
+dl{
+	display: table;
+	margin: 1em 40px;
+}
+
+dl > div{
+	display: table-row;
+}
+
+dt,
+dd{
+	display: table-cell;
+	padding-right: 0.5em;
+}
+
 header{
 	font-variant: small-caps;
 	margin: 1em;
@@ -424,6 +453,29 @@ section[epub|type*="dedication z3998:letter"]{
 	display: block;
 	font-size: 1.5em;
 	margin-top: 0.5em;
+}
+
+#chapter-10-3 em[epub|type~="z3998:phoneme"]{
+	text-transform: uppercase;
+}
+
+/* Extended `{` after “Thus the formula becomes” */
+@supports(display: flex){
+	#chapter-10-3-5-2 > blockquote:nth-child(43) > p > span:last-child{
+		align-items: center;
+		display: flex;
+	}
+
+	#chapter-10-3-5-2 > blockquote:nth-child(43) > p > span:last-child > span:nth-child(2){
+		font-size: 2em;
+		margin: 0 0.25em;
+		text-indent: 0;
+	}
+
+	#chapter-10-3-5-2 > blockquote:nth-child(43) > p > span:last-child > span:last-child > span{
+		display: block;
+		text-indent: 0;
+	}
 }
 
 #illustration-3,
