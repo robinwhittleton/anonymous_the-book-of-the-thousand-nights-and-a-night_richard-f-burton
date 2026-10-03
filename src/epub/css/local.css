@@ -13,7 +13,8 @@ abbr[epub|type~="se:era"]{
 }
 
 body [xml|lang],
-dfn{
+dfn,
+q{
 	font-style: italic;
 }
 
