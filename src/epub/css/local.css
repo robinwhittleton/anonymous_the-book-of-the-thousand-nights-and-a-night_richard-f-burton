@@ -531,8 +531,32 @@ section[epub|type*="dedication z3998:letter"]{
 	}
 }
 
+#illustration-4,
+#illustration-6,
+#illustration-7{
+	width: 1ex;
+}
 
 #illustration-3,
-#illustration-4{
-	width: 1ex;
+#illustration-5{
+	width: 3ex;
+	vertical-align: middle;
+}
+
+/* Coin description in note-4497 */
+#note-4497 p{
+	text-indent: 0;
+}
+
+@supports(display: flex) and (writing-mode: sideways-lr){
+	#note-4497 > blockquote{
+		display: flex;
+		align-items: center;
+	}
+
+	#note-4497 header{
+		writing-mode: sideways-lr;
+		font-variant: normal;
+		margin: 0 1em 0 0;
+	}
 }
